@@ -2,9 +2,9 @@
   function NoteController(noteList = new NoteList()){
     this._noteList = noteList
     this._setup
-    note = new Note('favourite drink')
-    noteList.addNote(note)
-    console.log(this._noteList)
+    // note = new Note('favourite drink')
+    // noteList.addNote(note)
+    // console.log(this._noteList)
   }
 
   NoteController.prototype = {
