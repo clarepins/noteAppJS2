@@ -18,8 +18,6 @@ it("app div has note text on load", function() {
   var note = new NoteDouble()
   noteList.addNote(note)
   noteController._setup()
-  console.log(noteController._noteList._notes[0].text)
-  console.log('test innerHMTL: ' + document.getElementById("app").innerHTML)
   var innerHtml = "<ul><li><div>test note</div></li></ul>"
   assert.isEqual(document.getElementById("app").innerHTML, innerHtml)
 });
@@ -32,9 +30,6 @@ it("app div has note text on load", function() {
   noteList.addNote(note)
   noteList.addNote(note2)
   noteController._setup()
-  console.log(noteController._noteList._notes[0].text)
-  console.log(noteController._noteList._notes[1].text)
-  console.log('test innerHMTL: ' + document.getElementById("app").innerHTML)
   var innerHtml = "<ul><li><div>test note</div></li><li><div>test note laaaa la l</div></li></ul>"
   assert.isEqual(document.getElementById("app").innerHTML, innerHtml)
 });
